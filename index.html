@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chandler Vonfeldt — Cybersecurity Portfolio</title>
+  <meta name="description" content="Chandler Vonfeldt — Cybersecurity Engineer, Detection & SOC investigations." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">Chandler Vonfeldt</a>
+      <nav class="nav" id="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="menuBtn" class="menu-btn" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Hi, I'm <span id="ownerName">Chandler Vonfeldt</span>.</h1>
+          <p class="lead">I focus on detection engineering, SOC investigations, and building repeatable security automation to reduce analyst toil and improve detection fidelity.</p>
+          <p class="cta">
+            <a class="btn" href="#projects">See my work</a>
+            <a class="btn ghost" href="#contact">Contact me</a>
+          </p>
+          <p class="meta">(720) 810-1115 · Denver, CO · <a href="mailto:cvonfeldt@mines.edu">cvonfeldt@mines.edu</a></p>
+        </div>
+        <div class="hero-card">
+          <div class="avatar-placeholder">CV</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container about" id="about">
+      <h2>About</h2>
+      <p>I am a Computer Science student at Colorado School of Mines (B.S. expected 2025) with hands-on experience in detection engineering, incident response, and SOC operations. I build lab environments, tune SIEM detections (Sentinel, Splunk, Graylog), and automate triage using scripting and SOAR playbooks.</p>
+
+      <h3>Education & Certifications</h3>
+      <ul class="compact-list">
+        <li><strong>Colorado School of Mines</strong> — B.S. Computer Science (expected Aug 2025)</li>
+        <li><strong>CompTIA Security+</strong> (SY0-701) — Active (Apr 2026)</li>
+        <li>Security Blue Team – Blue Team Level 1 (BTL1) — In progress</li>
+      </ul>
+    </section>
+
+    <section class="container projects" id="projects">
+      <h2>Projects</h2>
+      <div class="grid" id="projectsGrid">
+        <article class="card">
+          <h3><a href="https://github.com/cvonfeldt" target="_blank" rel="noopener">Sentinel SOC Lab</a></h3>
+          <p>Built an end-to-end Sentinel SOC lab integrating CrowdStrike, Defender XDR, Okta, Palo Alto, AWS, and GCP. Tuned KQL detections and reconstructed a MITRE ATT&CK timeline to validate detection coverage.</p>
+        </article>
+
+        <article class="card">
+          <h3><a href="https://github.com/cvonfeldt" target="_blank" rel="noopener">Splunk Home Labs</a></h3>
+          <p>Administered AD-based Windows lab with Splunk Enterprise and Sysmon to simulate attacker activity. Created SPL-based detection logic and reduced false positives through iterative tuning.</p>
+        </article>
+
+        <article class="card">
+          <h3><a href="https://github.com/cvonfeldt" target="_blank" rel="noopener">Splunk BOTS Labs</a></h3>
+          <p>Simulated enterprise intrusions (ransomware & web compromise) across multiple telemetry sources and produced structured incident reports to support SOC workflows.</p>
+        </article>
+
+        <article class="card">
+          <h3><a href="https://github.com/cvonfeldt" target="_blank" rel="noopener">Python — Splunk/VirusTotal Triage Script</a></h3>
+          <p>Automated Splunk queries for authentication failures and enriched findings with VirusTotal intelligence to speed triage of suspected brute-force activity.</p>
+        </article>
+
+        <article class="card">
+          <h3><a href="https://github.com/cvonfeldt" target="_blank" rel="noopener">SOAR Playbook — Okta MFA Response</a></h3>
+          <p>Designed a Microsoft Sentinel playbook using Azure Logic Apps to automatically enrich and route Okta-related incidents for fast SOC response.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container" id="experience">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="item">
+          <h3>Cybersecurity Engineering Intern — FTI Defense</h3>
+          <p class="muted">Aug 2022 – Jan 2023 · Chesapeake, VA (Remote)</p>
+          <ul>
+            <li>Architected and operated an enterprise red team environment across 6 ESXi hosts and 15+ VMs; conducted vulnerability assessments with Nmap and Nessus.</li>
+            <li>Built Windows Server AD domain with GPO, Kerberos, and account lockout policies; integrated Windows and Linux endpoints.</li>
+            <li>Deployed Graylog SIEM for centralized log aggregation and monitored alert pipelines to validate detection visibility.</li>
+            <li>Performed penetration testing lifecycle and produced DoD-aligned reports with remediation guidance.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <h3>IT / Security Intern — TTM Technologies</h3>
+          <p class="muted">Jun 2022 – Jun 2023 · Littleton, CO</p>
+          <ul>
+            <li>Supported Duo SSO rollout across 20+ apps for 250+ users and hardened internal systems against injection vulnerabilities.</li>
+            <li>Redesigned intranet platform improving performance ~35% and user satisfaction by ~52% through security improvements and UX changes.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <h3>Mines OreSec — Member</h3>
+          <p class="muted">Aug 2024 – Aug 2025</p>
+          <ul>
+            <li>Participated in CTFs, workshops, and talks focused on threat detection and secure system practices.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="container skills" id="skills">
+      <h2>Skills</h2>
+      <ul class="skill-list">
+        <li>Microsoft Sentinel</li>
+        <li>Splunk</li>
+        <li>Graylog</li>
+        <li>KQL · SPL · Sigma</li>
+        <li>Threat Hunting · Incident Response</li>
+        <li>Windows AD & Sysmon</li>
+        <li>VMware ESXi · vCenter</li>
+        <li>Python · PowerShell · Bash</li>
+        <li>AWS · Azure · GCP</li>
+      </ul>
+    </section>
+
+    <section class="container contact" id="contact">
+      <h2>Contact</h2>
+      <p>I'm open to internships, research collaborations, and entry-level roles in detection engineering and SOC operations.</p>
+      <p>Email: <a href="mailto:cvonfeldt@mines.edu">cvonfeldt@mines.edu</a> · Phone: (720) 810-1115</p>
+      <p class="social">
+        <a href="https://github.com/cvonfeldt" target="_blank">GitHub</a> · <a href="https://linkedin.com/in/chandler-vonfeldt-234a2a242/" target="_blank">LinkedIn</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Chandler Vonfeldt — Built with a lightweight static template.</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
